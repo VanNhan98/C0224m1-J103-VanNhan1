@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 100px;
+            margin: 200px auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div >
+        <h1>Do you love me</h1>
+    </div>
+    <input onclick="clickYes()" type="button" value="YES" >
+    <input type="button" id="btn" value="NO" onmouseover="moveButton()" style="position: absolute ; top: 259px; left:700px" >
+</div>
+</body>
+<script>
+function clickYes() {
+    alert("Yes, you are right")
+}
+
+function moveButton() {
+    let windownWidth = window.innerWidth;
+    let windownHeight = window.innerHeight;
+
+let x = Math.floor(Math.random() * windownWidth);
+let Y = Math.floor(Math.random() * windownHeight);
+
+let btn = document.getElementById("btn");
+btn.style.left = x +"px";
+btn.style.top = y +"px";
+}
+
+
+
+</script>
+</html>
