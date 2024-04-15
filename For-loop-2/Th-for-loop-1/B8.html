@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="doanSo()" id="enter">Chơi</button>
+</body>
+<script>
+    function doanSo() {
+        let count = 0
+        let number = +prompt("Nhập số bạn muốn đoán lớn nhất trong khoảng")
+        let numberRandom = Math.floor(Math.random() * number);
+        console.log(numberRandom);
+        let numberCheck = +prompt("Nhập vào số muốn đoán");
+        while (count < 3) {
+            if (numberCheck === numberRandom) {
+                alert("Chúc mừng người chơi. Bạn đã đoán đúng");
+                break;
+            } else if (numberCheck > numberRandom) {
+                alert("Sô bạn đoán lớn hơn. Mời nhập lại")
+            } else {
+                alert("Số bạn đoán bé hơn. Mời nhập lại")
+            }
+            count ++;
+            numberCheck = +prompt("Nhập vào số muốn đoán");
+        }
+        if (count === 3) {
+            alert("Bạn đã hết số lần đoán")
+        }
+    }
+
+
+</script>
+</html>

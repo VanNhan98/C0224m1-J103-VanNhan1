@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // let count = 0 ;
+    // let n = 7;
+    // let sum = 0;
+    // while (count < 5) {
+    //     if (n % 7 === 0){
+    //         count ++;
+    //         sum += n;
+    //     }
+    //     n++
+    // }
+    // document.write(sum+" ")
+    function sumDivisibleBy7(number) {
+        let n = 7;
+        let count = 0 ;
+        let sum = 0
+        while (count < number ) {
+            if (n % 7 === 0) {
+                count ++;
+                sum += n;
+            }
+            n++;
+        }
+        return sum;
+    }
+    let number = parseInt(prompt("Nhập n số chia hết cho 7: "))
+    let result = sumDivisibleBy7(number)
+    console.log(result)
+
+</script>
+</html>
