@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPTB2</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt("Nhập a: ");
+    let b = +prompt("Nhập b: ");
+    let c = +prompt("Nhập c: ");
+    let delta = b * b -4 * a * c ;
+
+    if ( a === 0 ) {
+        if ( b !== 0) {
+            let x = -c / b;
+            alert("Phương trình là phương trình bậc 1 và có một nghiệm: x = " + x);
+        }
+        else if (c===0){
+            alert("PT VSN");
+        }
+        else {
+            alert("Phương trình không có nghiệm thực.");
+        }
+
+    }
+    else {
+            if (delta > 0) {
+                let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                alert("Phương trình có hai nghiệm phân biệt: x1 = " + x1 + ", x2 = " + x2);
+            } else if (delta === 0) {
+                let x = -b / (2 * a);
+                alert("Phương trình có nghiệm kép: x = " + x);
+            } else {
+                alert("Phương trình không có nghiệm thực.");
+            }
+        
+    }
+
+</script>
+</html>
