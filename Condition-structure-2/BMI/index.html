@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Tính chỉ số cần nặng</h2>
+    <label for="weight"> Nhập cân nặng: (kg)
+        <input type="text" id="weight">
+    </label><br><br>
+    <label for="height"> Nhập chiều cao: (m)
+        <input type="text" id="height">
+    </label><br><br>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="check"></p>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
