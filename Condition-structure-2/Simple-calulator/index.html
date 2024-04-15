@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cal_container" id="calculator">
+    <div class="screen">
+        <input class="form_input" id="display" type="text">
+    </div>
+    <div class="cal_buttons">
+        <button onclick="toDisplay('1')" class="cal_btn">1</button>
+        <button onclick="toDisplay('2')" class="cal_btn">2</button>
+        <button onclick="toDisplay('3')" class="cal_btn">3</button>
+        <button onclick="toDisplay('+')" class="cal_btn" >+</button>
+    </div>
+    <div class="cal_buttons">
+        <button onclick="toDisplay('4')" class="cal_btn">4</button>
+        <button onclick="toDisplay('5')" class="cal_btn">5</button>
+        <button onclick="toDisplay('6')" class="cal_btn">6</button>
+        <button onclick="toDisplay('-')" class="cal_btn">-</button>
+    </div>
+    <div class="cal_buttons">
+        <button onclick="toDisplay('7')" class="cal_btn">7</button>
+        <button onclick="toDisplay('8')" class="cal_btn">8</button>
+        <button onclick="toDisplay('9')" class="cal_btn">9</button>
+        <button onclick="toDisplay('*')" class="cal_btn" >*</button>
+    </div>
+    <div class="cal_buttons">
+        <button onclick="clearDisplay('C')" class="cal_btn">C</button>
+        <button onclick="toDisplay('0')" class="cal_btn">0</button>
+        <button onclick="calculate('=')" class="cal_btn">=</button>
+        <button onclick="toDisplay('/')" class="cal_btn" >/</button>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
