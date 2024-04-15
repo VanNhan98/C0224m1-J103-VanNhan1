@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+<script>
+    let content = "";
+content +="<table border='1'>"
+    for (let i = 1; i <10 ; i++) {
+        content += "<tr>";
+        for (let j = 2; j < 10 ; j++) {
+            content += `<td> ${j} x ${i} = ${j * i} </td>`
+        }
+        content += "</tr>";
+    }
+    content +="</table>"
+    document.getElementById("result").innerHTML = content;
+</script>
+</html>
