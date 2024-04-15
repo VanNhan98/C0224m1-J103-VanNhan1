@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number" placeholder="Bán kính (r))">
+<button id="btn" onclick="circleArea()">Nhập</button>
+<div id="result"></div>
+</body>
+<script>
+    function circleArea() {
+
+        let radius =  document.getElementById("number").value;
+        let result =  Math.PI * radius * radius;
+        document.getElementById("result").innerHTML = result;
+
+}
+</script>
+</html>
