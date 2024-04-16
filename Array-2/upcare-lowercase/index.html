@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let string = prompt("nhập 1 chuỗi: ")
+    let result = "";
+    for (let i = 0; i < string.length ; i++) {
+        let char = string.charAt(i);
+        console.log(char)
+
+        if(char >= "a" && char <= "z") {
+            char = char.toUpperCase()
+        }
+        else  if(char >= "A" && char <= "Z") {
+            char = char.toLowerCase()
+        }
+        result += char;
+    }
+    console.log(result)  // The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX
+</script>
+</html>
