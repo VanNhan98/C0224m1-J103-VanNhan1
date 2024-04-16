@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhập n pt tối đa:")
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let input = +prompt("M["+i+"]= ");
+        arr.push(input)
+    }
+    let input1 = +prompt("Nhập pt V: ");
+    let check = false;
+    for (let i = 0; i < arr.length; i++) {
+        if (input1 === arr[i]) {
+            check = true;
+            break;
+        }
+    }
+    if(check) {
+        console.log(input1 + " is in the array")
+    }
+    else {
+        console.log(input1 + " is not in the array")
+    }
+
+</script>
+</html>

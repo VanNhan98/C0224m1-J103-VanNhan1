@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhập pt tối đa: ");
+    let  arr = [];
+    for (let i = 0; i < n; i++) {
+        let input = +prompt("M[" + i + "]= ");
+        arr.push(input);
+    }
+
+    let v = +(prompt("Check số nguyên: "));
+    let check = false;
+    let index = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if(v === arr[i]) {
+            check = true;
+            index = i;
+        }
+    }
+    console.log(arr.splice(index,1))
+    console.log("Mảng sau khi xoá: "+arr)
+</script>
+</html>

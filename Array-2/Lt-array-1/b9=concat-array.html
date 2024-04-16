@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let  a = [];
+
+    let m = prompt("Nhập pt tối đa mảng a: ");
+    for (let i = 0; i < m; i++) {
+
+        let input = prompt("M[" + i + "]= ");
+        a.push(input);
+    }
+
+    let  b = [];
+    let n = prompt("Nhập pt tối đa mảng b: ");
+    for (let i = 0; i < n; i++) {
+        let input = prompt("M[" + i + "]= ");
+        b.push(input);
+    }
+    c = a.concat(b);
+    console.log(c)
+
+    // function inputArray(promptMessage, maxElements) {
+    //     let arr = [];
+    //     for (let i = 0; i < maxElements; i++) {
+    //         let input = prompt(`${promptMessage} [${i}]=`);
+    //         arr.push(input);
+    //     }
+    //     return arr;
+    // }
+    //
+    // let a = [];
+    // let m = prompt("Nhập số phần tử tối đa của mảng a: ");
+    // a = inputArray("Mảng a", m);
+    //
+    // let b = [];
+    // let n = prompt("Nhập số phần tử tối đa của mảng b: ");
+    // b = inputArray("Mảng b", n);
+    //
+    // let c = a.concat(b);
+    // console.log(c);
+</script>
+</html>
