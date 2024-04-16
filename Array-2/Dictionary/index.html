@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập từ</p>
+<input type="text" id="input">
+<input type="button" id="btn" value="Dịch" onclick="transfer()">
+<div id="result"></div>
+</body>
+<script>
+    function transfer() {
+        let arr_eng = ["banana", "apple"];
+        let arr_vie = ["chuối", "táo"];
+        let index_eng = 0;
+        let result = "";
+        let string = document.getElementById("input").value;
+        for (let i = 0; i < arr_eng.length ; i++) {
+            if(string === arr_eng[i]) {
+                index_eng = i;
+            }
+            for (let j = 0; j < arr_vie.length ; j++) {
+                if (index_eng === j) {
+                    result = arr_vie[j];
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</html>
