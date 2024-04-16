@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Sample Screen</p>
+<input type="number" id="number">
+<input type="button" value="Add" id="btnAdd" onclick="addElementToArray()">
+<input type="button" value="Display" id="btnDisplay" onclick="displayElement()"><br>
+<p id="result" ></p>
+</body>
+<script>
+    let n = 0;
+    let array = [];
+    function addElementToArray() {
+        array[n] = document.getElementById("number").value;
+        alert("Phần tử: "+array[n]+" được thêm tại index "+n);
+        n++;
+        document.getElementById("number").value="";
+    }
+
+    function displayElement() {
+        let e = "";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element "+i+ " = "+array[i] + "</br>"
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+
+</script>
+</html>
