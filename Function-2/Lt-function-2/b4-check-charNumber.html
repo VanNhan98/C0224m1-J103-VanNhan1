@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function checkNumber(number) {
+        if (!isNaN(number)) {
+            return number;
+        }
+    }
+    let input = prompt("Nhập 1 kí tự bất kì: ")
+    let result = checkNumber(input);
+    if (result) {
+        alert(result+" là kí tự số")
+    }
+    else
+        alert(" không là kí tự số")
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function reverseNumber(number1, number2) {
+       let temp = number1;
+       number1 = number2;
+       number2 = temp;
+       return [number1, number2]
+    }
+    let number1 = +prompt("Nhập số thứ 1: ")
+    let number2 = +prompt("Nhập số thứ 2: ")
+    let result = reverseNumber(number1, number2);
+    console.log(result.join(" "))
+</script>
+</html>
