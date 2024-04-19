@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function circleArea(radius) {
+        return Math.PI * Math.pow(radius, 2);
+    }
+    function circlePerimeter(radius) {
+        return 2 * radius * Math.PI;
+    }
+
+    let radius = +prompt("Nhập bán kính: ")
+    let area = circleArea(radius);
+    let perimeter = circlePerimeter(radius);
+    alert("chu vi hình tròn: "+perimeter)
+    alert("S hình tròn: "+area)
+</script>
+</html>
