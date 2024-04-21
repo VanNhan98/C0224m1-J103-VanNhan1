@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isPalindrome(string) {
+        let reverse = "";
+
+        for (let i = 0; i < string.length ; i++) {
+            reverse = string.charAt(i) + reverse;
+        }
+        return reverse === string;
+
+    }
+    let string = prompt("nHập chuỗi bất kì: ")
+    let result = isPalindrome(string);
+    if (result) {
+        alert("Chuỗi nhập vào là chuỗi palindrome");
+    } else {
+        alert("Chuỗi nhập vào không phải là chuỗi palindrome");
+    }
+</script>
+</html>
