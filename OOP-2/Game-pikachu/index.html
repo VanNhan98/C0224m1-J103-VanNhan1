@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu</title>
+</head>
+<body>
+<div id="game"></div>
+</body>
+<script>
+class Pikachu {
+    image;
+    top;
+    left;
+    size;
+
+    constructor(image, top, left, size) {
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+    }
+
+    getPikachu() {
+        return `<img width="${this.size}"
+                      height="${this.size}"
+                         src="${this.image}"
+                         style="top: ${this.top}px; left: ${this.left}px ; position: absolute">`
+    }
+
+    getMoveRight() {
+        this.left += 20;
+    }
+
+    start() {
+        if (this.left < window.innerWidth - this.size) {
+            this.getMoveRight();
+            document.getElementById("game").innerHTML =this.getPikachu();
+            setTimeout(() => {
+                this.start()
+            },500)
+        }
+    }
+}
+let pikachu = new Pikachu("pikachu.png", 20, 20, 200);
+pikachu.start()
+</script>
+</html>
