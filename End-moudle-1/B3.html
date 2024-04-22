@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    function checkPrime(number) {
+
+        if (number < 2) {
+            return false;
+        }
+
+        for(let i = 2;i <= Math.sqrt(number); i++)
+        {
+            if(number % i === 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    function sumOflistPrime(number) {
+        let sum = 0;
+        for(let i = 0; i <= number; i++)
+        {
+            if(checkPrime(i))
+            {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+    let number = +prompt("Nhập vào một số nguyên: ");
+    let result = sumOflistPrime(number);
+    console.log(result);
+</script>
+</html>
