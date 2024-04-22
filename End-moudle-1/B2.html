@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+
+</body>
+<script>
+function insertNumberToArray(arr, num, index ) {
+    if(index < 0 || index > arr.length) {
+        return arr;
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        if (index === parseInt(arr[i])) {
+            arr[i] = num;
+        }
+    }
+    return arr;
+}
+let arr = prompt("Nhập giá trị mảng arr: ").split(" ").map(Number);
+console.log(arr)
+let num = +prompt("nhập 1 số nguyên: ");
+let index = +prompt("Nhập vị trí index: ")
+let result = insertNumberToArray(arr,num,index);
+console.log("Mảng mới "+result);
+</script>
+</html>

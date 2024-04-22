@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    function findAvg(arr) {
+        let sumGrades= 0;
+        let avgGrades ;
+        for (let i = 0; i < arr.length ; i++) {
+
+            sumGrades += arr[i];
+        }
+        avgGrades = sumGrades / arr.length;
+        return  avgGrades;
+    }
+    let arr = prompt("Nhập giá trị mảng arr: ").split(" ").map(Number);
+    let result = findAvg(arr);
+    console.log(result);
+
+</script>
+</html>
